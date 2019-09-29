@@ -16,6 +16,7 @@ var offlineFundamentals = [
   'index.html',
   'mainfest.json',
   'style.css',
+  'images/sh-logo.png',
   'images/main-banner.jpg',
   'images/logo.png',
   'images/favicon.ico',
