@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Social Hardware - Together We Can Do More</title>
+  <meta property="og:title" content="Social Hardware - Together We Can Do More">
+  <meta property="og:description" content="Social Hardware works with non-profit organisations in APAC countries to provide assistive devices and disability rehabilitation programs to underserved communities in remote and rural areas.">
+  <meta property="og:url" content="http://socialhardware.in" />
+  <meta property="og:image" content="http://socialhardware.in/images/logo.png" />
+  <meta property="og:site_name" content="منصة نون التعليمية">
+  <meta property="og:type" content="website" />
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.min.css" />
+
+</head>
+
+<body>
+   <!------ main section --------> 
+   <section class="main-section">
+       <div class="container flex-column align-start">
+            <img class="brand-logo" src="images/logo.png" alt="logo" />
+            <div class="main-section__content flex-column align-start justify-center">
+                <h1>Frugal Innovation &</h1>
+                <h1 class="text-color-brand">Participatory Design</h1>
+                <p>We work with non-profit organisations to provide 
+                   assistive devices and disability rehabilitation programs 
+                   to underserved communities in remote and rural areas.</p>
+                <Button class="cms-btn cms-btn__lg mt-1">learn More </Button>   
+            </div>
+            <div class="main-section__footer flex-columnr">
+                <p>Design Powered By</p>
+                <img src="images/fusion-360-logo.png" alt='Fusion 360' />
+            </div>
+       </div>
+   </section>
+
+    <!------ main section --------> 
+    <section class="product-section">
+        <div class="container flex-column">
+            <div class="flex-row flex-column-sm__reverse justify-space">
+                <div class="product-section__media">
+                    <img src="images/generative-design.jpg" alt="rendering generative design" />
+                </div>
+                <div class="product-section__content flex-column">
+                    <h1 class="section-title">What Is <span class="text-color-brand">Frugal Innovation?</span></h1>
+                    <p>Frugal innovation means achieving more with less. It provides functional solutions using fewer resources, resulting in lower-cost products and services, designed to outperform the alternative.</p>
+                </div>
+            </div>
+            <div class="flex-row flex-column-sm mt-1 justify-space">
+                <div class="product-section__content flex-column">
+                    <h1 class="section-title">What Is <span class="text-color-brand">Participatory Design?</span></h1>
+                    <p>By actively encouraging stakeholders and members of the public to participate in shaping products and services that address community challenges, more effective solutions can be achieved. </p>
+                </div>
+                <div class="product-section__media">
+                    <img src="images/image_placeholder.jpg" alt="rendering generative design" />
+                </div>
+            </div>
+
+            <div class="flex-row flex-column-sm__reverse mt-4 justify-space">
+                <div class="product-section__media">
+                    <img src="images/image_placeholder.jpg" alt="rendering generative design" />
+                </div>
+                <div class="product-section__content flex-column align-start">
+                    <h1 class="section-title">Lorem <span class="text-color-brand">Ipsum Technica</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Button class="cms-btn cms-btn__lg mt-1">Read More </Button>   
+                </div>
+            </div>
+            <div class="flex-row flex-column-sm__reverse mt-2 justify-space">
+                <div class="product-section__media">
+                    <img src="images/image_placeholder.jpg" alt="rendering generative design" />
+                </div>
+                <div class="product-section__content flex-column align-start">
+                    <h1 class="section-title">Lorem <span class="text-color-brand">Ipsum Technica</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Button class="cms-btn cms-btn__lg mt-1">Read More </Button>   
+                </div>
+            </div>
+        </div>  
+    </section>  
+
+    <!------ newsletter ---------->
+    <section class="newsletter-section">
+        <div class="container flex-row flex-column-sm justify-space">
+            <div class="flex-column">
+                <div class="section-title">Subscribe For Updates From Our Blog</div>
+                <p>Subscribe to be emailed when we share Social Hardware related news and anoucements, GDPR compliant. Unsubscribe anytime.</p>
+            </div>
+            <form class="flex-column">
+                <input type="email" placeholder="Enter your business email" name="email" />
+                <Button class="cms-btn cms-btn__lg mt-1" type="submit" name="newsletter-submit">Subsribe To Our Blog</Button>   
+            </div>
+        </div>  
+    </section>  
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function() {
+            }, function() {
+            console.log('CLIENT: service worker registration failure.');
+            });
+        } else {
+            console.log('CLIENT: service worker is not supported.');
+        }
+    </script>
+</body>
+
+</html>
