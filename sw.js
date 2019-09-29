@@ -15,7 +15,7 @@ var offlineFundamentals = [
   '',
   'index.html',
   'mainfest.json',
-  'style.min.css',
+  'style.css',
   'images/main-banner.jpg',
   'images/logo.png',
   'images/favicon.ico',
