@@ -75,10 +75,10 @@ body {
     line-height: 30px;
 }
 .cms-btn__lg {
-    min-width: 12rem;
-    height: 40px;
-    line-height: 40px;
-    font-size: 13px;
+    min-width: 16rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    font-size: 1.8rem;
 }
 .cms-btn:focus {
     outline: 0;
@@ -88,7 +88,7 @@ body {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .flex-row {
@@ -102,12 +102,15 @@ body {
 .align-start {
     align-items: flex-start;
 }
+.align-center {
+    align-items: center;
+}
 .justify-center {
     justify-content: center;
 }
 
 .justify-space > div, .justify-space > form {
-    margin: 0 4rem;
+    margin: 0 6rem;
 }
 .justify-space.md > div, .justify-space > form {
     margin: 0 2rem;
@@ -122,7 +125,7 @@ body {
     margin-right: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
     .container {
         max-width: 100%;
         padding: 0 2rem;
@@ -138,6 +141,9 @@ body {
     }
     .flex-column-md__reverse {
         flex-flow: column-reverse nowrap;
+    }
+    .justify-space > div, .justify-space > form {
+        margin: 0 4rem;
     }
 }
 
@@ -158,7 +164,7 @@ body {
     background-image: url('images/main-banner.jpg');
     background-repeat: no-repeat;
     background-position: top right;
-    margin-bottom: 8rem;
+    margin-bottom: 20rem;
 }
 .main-section .container {
     height: 100%;
@@ -168,16 +174,17 @@ body {
 }
 .main-section__content {
     flex: 1 1 0;
-    padding: 10rem 0;
+    padding: 8rem 0;
 }
 .main-section__content h1 {
-    font-size: 3rem;
+    font-size: 5.5rem;
     font-weight: 600;
     margin: 0;
     line-height: 1.2;
 }
 .main-section__content p {
-    max-width: 45rem;
+    max-width: 55rem;
+    font-size: 2.5rem
 }
 .main-section__footer {
     padding: 2rem 0;
@@ -192,13 +199,13 @@ body {
 
 /*--------- product section -------*/
 .section-title {
-    font-size: 2.6rem;
+    font-size: 4.8rem;
     font-weight: 600;
     margin: 1rem 0;
     line-height: 1.2;
 }
-.product-section {
-    margin: 4rem 0;
+.product-section {  
+    margin: 0 0 4rem 0;
 }
 .product-section__media {
     flex: 1 1 0;
@@ -208,40 +215,86 @@ body {
     height: auto;
 }
 .product-section__content {
-    padding: 2rem 0;
+    padding: 0rem 0;
     flex: 1 1 0;
+}
+.product-section__content p {
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+.product-section__content p.description {
+    font-size: 2.2rem;
+    margin: 1rem 0;
 }
 
 /*-------- newsletter section ------*/
 .newsletter-section {
-    margin: 4rem 0;
+    margin: 8rem 0;
 }
 .newsletter-section input {
-    height: 40px;
+    height: 48px;
     border: 1px solid rgba(212, 212, 220, 0.9);   
     padding: 0 1rem;
     border-radius: 5px; 
     min-width: 35rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .newsletter-section input:focus {
     outline: 0;
     border: 1px solid #ff8700;
 }
 
+.newsletter-section .section-title {
+    font-size: 2.8rem;
+}
+.newsletter-section p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.error {
+    color: red;
+    font-size: 1.1rem;
+}
+
+
 /* ------ tabs (ipad) -------------*/
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
+    .main-section__content h1 {
+        font-size: 4.5rem;
+    }
+    .main-section__content p {
+        font-size: 2rem;
+        max-width: 48rem;
+    }
     .main-section {
-        background-size: contain; 
-        height: 60rem;
-        margin-bottom: 8rem; 
+        height: 68rem;
+        margin-bottom: 8rem;
     }
     .main-section__content {
         flex: 1 1 0;
-        padding: 6rem 0;
+        padding: 4rem 0;
+    }
+}
+
+/* ------ tabs (ipad) -------------*/
+@media (max-width: 992px) {
+    .main-section__content h1 {
+        font-size: 4.5rem;
     }
     .main-section__content p {
-        max-width: 35rem;
+        font-size: 2rem;
+        max-width: 32rem;
+    }
+    .main-section {
+        background-size: contain; 
+        height: 68rem;
+        margin-bottom: 8rem;
+    }
+    .main-section__content {
+        flex: 1 1 0;
+        padding: 4rem 0;
     }
 }
 
@@ -249,13 +302,16 @@ body {
 /* ------ mobile -------------*/
 @media (max-width: 600px) {
     .main-section {
-        height: 96vh;
+        height: 90rem;
         margin-bottom: 2rem; 
     }
     .main-section__content {
         flex: 1 1 0;
-        padding: 4rem 0;
-        margin-top: 2rem;
+        padding: 2em 0;
+        margin-top: 0;
+    }
+    .main-section__content p { 
+        max-width: 100%;
     }
     .main-section__footer {
         padding: 2rem 0;
@@ -269,7 +325,7 @@ body {
         font-size: 2.4rem;
     }
     .product-section {
-        margin: 2rem 0;
+        margin: 0 0 2rem 0;
     }
     .product-section .justify-space > div {
         margin: 0;
@@ -281,6 +337,9 @@ body {
     .product-section__content {
         padding: 2rem 0;
         flex: 1 1 0;
+    }
+    #newsletter-form {
+        margin-top: 2rem;
     }
 
     .newsletter-section .justify-space > form, .newsletter-section .justify-space > div {
@@ -306,5 +365,8 @@ body {
 }
 .mt-5 {
     margin-top: 5rem; 
+}
+.mt-8 {
+    margin-top: 8rem; 
 }
 
