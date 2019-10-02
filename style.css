@@ -333,9 +333,10 @@ body {
     .main-section {
         height: 86rem;
         margin-bottom: 2rem; 
+        background-size: 80%; 
     }
     .main-section .container {
-        background-position: 95% 5%;
+        background-position: 94% 4%;
     }
     .main-section__content h1 {
         font-size: 3.4rem;
