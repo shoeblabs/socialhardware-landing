@@ -84,9 +84,9 @@
                 </div>
             </div>
         </div>  
-    </section>  
+    </section>
 
-    <!------ newsletter ---------->
+    <!------ newsletter section ---------->
     <section class="newsletter-section">
         <div class="container flex-row flex-column-sm justify-space">
             <div class="flex-column">
@@ -109,7 +109,6 @@
             var email = document.getElementById('user-email').value;
             var emailError = document.getElementById('email-error');
             emailError.innerHTML = 'Sorry, unable to subscribe!!';
-            // var emailError = document.getElementById('email-error');
             // emailError.innerHTML = '';
 
             // var EMAIL_PATTERN = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
@@ -124,23 +123,6 @@
             // var data = {
             //     email_address: email, 
             //     status: 'subscribed'
-            // };
-
-            // var API_KEY = '008e51e5937c11f0b8cb18e0798b863f-us18';
-            // var list_id = 'b9eaf6c533';
-            // const xhr = new XMLHttpRequest();
-            // xhr.open('POST', 'https://us18.api.mailchimp.com/3.0/lists/'+ list_id + 'members');
-            // xhr.setRequestHeader('user', API_KEY);
-            // xhr.setRequestHeader('Content-Type', 'application/json');
-            // xhr.send(data);
-
-            // xhr.onreadystatechange = function() {
-            //     const DONE = 4;
-            //     const OK = 200;
-            //     if (xhr.readyState === DONE && xhr.status === OK) {
-            //         console.log('res', xhr.responseText);
-            //         var response = xhr.responseText ? JSON.parse(xhr.responseText) : {};
-            //     }
             // };
         }
     </script>
