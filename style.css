@@ -63,6 +63,10 @@ body {
     background: #ff8700;
     color: #fff;
 }
+.cms-btn__blue {
+    background: #0e9ae5;
+    color: #fff;
+}
 .cms-btn__sm {
     min-width: 8rem;
     height: 26px;
@@ -85,6 +89,9 @@ body {
 }
 .cms-btn:active {
     background: #ff7700;
+}
+.cms-btn__blue:active {
+    background: #50c2ff;
 }
 
 .container {
@@ -386,6 +393,39 @@ body {
     .newsletter-section .justify-space > form, .newsletter-section .justify-space > div {
         margin: 0;
     }
+}
+
+/* ------ login ---------*/
+.login-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1rem;
+}
+
+.login-section form {
+    margin: 4rem 0;
+}
+.login-section form input[type="text"],input[type="email"],input[type="password"],input[type="tel"] { 
+    height: 40px;
+    width: 300px;
+    border: 1px solid #e1e1e1;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+.login-section form label {
+    padding: 0 10px;
+    color: rgba(0,0,0,0.6);
+}
+#showLink {
+    text-align: center;
+}
+#showLink a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1595da;
 }
 
 /* -------- utils -----------*/

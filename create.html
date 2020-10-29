@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Social Hardware - Together We Can Do More</title>
+  <meta property="og:title" content="Social Hardware - Together We Can Do More">
+  <meta property="og:description" content="Social Hardware works with non-profit organisations in APAC countries to provide assistive devices and disability rehabilitation programs to underserved communities in remote and rural areas.">
+  <meta property="og:url" content="http://socialhardware.in" />
+  <meta property="og:image" content="http://socialhardware.in/images/logo.png" />
+  <meta property="og:site_name" content="منصة نون التعليمية">
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i&amp;subset=latin,latin-ext" type="text/css" rel="stylesheet"> 
+  <link href="https://styles.assets-landingi.com/assets/css/2.10-landend-base.css" type="text/css" rel="stylesheet">
+  <link href="https://styles.assets-landingi.com/LipEJYcy/base.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?ver=1.2.1" />
+
+</head>
+
+<body>
+    <!------ main section --------> 
+    <section class="login-section">
+        <div class="container flex-column align-center">
+                <img class="brand-logo" src="images/logo.png" alt="logo" />
+                <form id="login-form">
+                    <strong>Create user</strong>
+                    <div class="column flex-start mt-1">
+                        <p>Name (optional)</p>
+                        <input id="name" name="name" type="text" placeholder="Enter your name" />
+                    </div>
+                    <div class="column flex-start">
+                        <p>Email</p>
+                        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+                    </div>
+                    <div class="flex-column justify-center">
+                        <button type="submit" name="login" class="cms-btn cms-btn__blue cms-btn__lg mt-1"> Create </button>
+                    </div>
+                </form>
+                <div id="showLink" class="mt-5"></div>
+        </div>
+    </section>
+
+    <script>
+        var form = document.getElementById('login-form');
+        var email = document.getElementById('email');
+        var name = document.getElementById('name');
+        var showLink = document.getElementById('showLink');
+        var agree = document.getElementById('agree');
+
+        form.addEventListener('submit', getStemKit);
+        
+        function getStemKit(e) {
+            e.preventDefault();
+            if (email.value != "") {
+                fetch('http://api.shoebraza.com/v1/user/create', {
+                    method: 'post',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email: email.value, name: name.value })
+                }).then(function(response) {
+                    return response.json();
+                }).then(function(res) {
+                    showLink.innerHTML = "<p>Email: <strong>"+res.data.email+"</strong></p><p>Password: <strong>"+res.data.password+"</strong></p>";
+                })
+                .catch(function(err) {
+                    console.log('error', err);
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
